@@ -5,10 +5,10 @@ pipeline {
     environment {
         COURSE = 'jenkins'
     }
-    // options {
-    //     timeout(time: 30, unit: 'MINUTES')
-    //     disableConcurrentBuilds()
-    // }
+    options {
+        timeout(time: 1, unit: 'SECONDS')
+        disableConcurrentBuilds()
+    }
     // parameters {
     //     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
     //     text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
